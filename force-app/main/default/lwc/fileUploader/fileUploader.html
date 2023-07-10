@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="File upload section" icon-name="standard:file">
+        <div class="slds-align_absolute-center">
+            <lightning-file-upload
+                record-id={recordId}
+                accept={acceptedFileFormats}
+                onuploadfinished={handleFileUpload}>
+            </lightning-file-upload>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <div if:true={tableDataLoaded}>
+        <lightning-card title="Datatable section" icon-name="utility:table">
+            <div class="slds-p-around_medium data-table">
+                <lightning-datatable
+                    column-widths-mode="auto"
+                    key-field={idName}
+                    data={showData}
+                    columns={columnsData}>
+                </lightning-datatable>
+            </div>
+            <c-table-paginator pagination-object-parent={paginationObject} onselectpage={handleSelectedPage}></c-table-paginator>
+        </lightning-card>
+    </div>
+</template>

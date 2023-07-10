@@ -1,0 +1,22 @@
+:host .active-element {
+    border: 2px solid lightgray;
+}
+
+:host .link-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+:host .disabled-button {
+    cursor: none;
+    pointer-events: none;
+    color: lightgray;
+}
+
+:host .enabled-button {
+    cursor: pointer;
+    color: #181818;
+}

@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-align_absolute-center">
+        <span class={backwardButtons} onclick={handleNavigateToFirstPage}>❮❮</span>
+        <span class={backwardButtons} onclick={handleNavigateToPreviousPage}>❮</span>
+        <span if:true={viewFirstPageThreeDots} class="link-element">
+            <a data-page="1" onclick={handleNavigateToFirstPage}>1</a>
+        </span>
+        <span if:true={viewFirstPageThreeDots} class="link-element">
+            ...
+        </span>
+        <template for:each={pages} for:item="item">
+            <span class={item.class} key={item.number}>
+                <a class="link-element" value={item.number} data-page={item.number}
+                    onclick={handleNavigateToSelectedPage}>{item.number}</a>
+            </span>
+        </template>
+        <span if:true={viewLastPageThreeDots} class="link-element">
+            ...
+        </span>
+        <span if:true={viewLastPageThreeDots} class="link-element">
+            <a data-page={totalPages} onclick={handleNavigateToLastPage}>{totalPages}</a>
+        </span>
+        <span class={forwardButtons} onclick={handleNavigateToNextPage}>❯</span>
+        <span class={forwardButtons} onclick={handleNavigateToLastPage}>❯❯</span>
+    </div>
+</template>
