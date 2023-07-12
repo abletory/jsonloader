@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#4B2BC1</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <label>Abletory&apos;s App</label>
+    <navType>Standard</navType>
+    <tabs>Abletory_Page</tabs>
+    <tabs>standard-Event</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Abletory_s_App_UtilityBar</utilityBar>
+</CustomApplication>
